@@ -1,0 +1,73 @@
+<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+		<style>
+			.xyz{
+				background-color: yellow;
+				width: 200px;
+				height: 200px;
+				position: relative;
+				border: 3px black solid;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="xyz">
+          <h1>Animate</h1>
+		</div>
+	
+<button id="animate" class="btn btn-warning">ANIMATE</button>
+<button id="stop" class="btn btn-dark">STOP</button>
+
+
+    <script src="jquery-3.6.4.min.js"></script>
+
+<script>
+	
+
+$(document).ready(function(){
+
+$("#animate").click(function(){
+
+$(".xyz").animate({
+	left:"200px",},"slow");
+
+
+$(".xyz").animate({
+	top:"200px",},"slow");
+
+
+$(".xyz").animate({
+	left:"0px",},"slow");
+
+
+$(".xyz").animate({
+	top:"0px",},"slow");
+
+
+
+});
+
+$("#stop").click(function(){
+$(".xyz").stop();
+});
+
+
+});
+
+
+
+
+
+
+
+</script>
+	</body>
+	</html>

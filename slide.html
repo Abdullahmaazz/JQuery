@@ -1,0 +1,62 @@
+<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+		<style>
+			.two{
+				background-color: orangered;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="two">
+			<h1>SLIDE </h1>
+			<p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	
+
+<button id="slideup" class="btn btn-dark">slide up</button>
+<button id="slidedown" class="btn btn-primary">slide down</button>
+<button id="slidetoggle" class="btn btn-warning">slide toggle</button>
+
+
+    <script src="jquery-3.6.4.min.js"></script>
+
+<script>
+	
+	$(document).ready(function(){
+
+     $("#slideup").click(function(){
+       $(".two").slideUp();
+     });
+
+
+   $("#slidedown").click(function(){
+       $(".two").slideDown();
+     });
+
+
+
+$("#slidetoggle").click(function(){
+       $(".two").slideToggle();
+     });
+
+     
+	});
+
+
+</script>
+
+	</body>
+	</html>
